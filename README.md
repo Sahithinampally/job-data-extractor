@@ -31,7 +31,7 @@ job-data-extractor/
 │   └── config.py      # Configuration settings  
 │── utils/             # Utility files  
 │   ├── logger.py      # Logging configuration  
-│   └── utils.py        # Utility functions  
+│   └── utils.py       # Utility functions  
 │── main.py            # Main script  
 │── requirements.txt   # Project dependencies  
 │── logs/              # Log files  
