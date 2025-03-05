@@ -19,4 +19,5 @@ Run the script: python main.py
 
 
 Output
+
 The script will output an Excel file named "EdTech_Jobs.xlsx" containing the extracted job listings.
