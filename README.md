@@ -53,6 +53,7 @@ Ensure you have **Python 3.x** installed. The following dependencies are require
 
 ```sh
 git clone https://github.com/your-username/job-data-extractor.git
+
 cd job-data-extractor
    ```
 ### **2. Install Dependencies**
