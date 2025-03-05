@@ -52,14 +52,14 @@ Ensure you have **Python 3.x** installed. The following dependencies are require
 ### **1. Clone the Repository**  
 
 ```sh
-git clone https://github.com/your-username/EdTech-Job-Scraper.git
-cd EdTech-Job-Scraper
+git clone https://github.com/your-username/job-data-extractor.git
+cd job-data-extractor
    ```
 ### **2. Install Dependencies**
 
 ```sh
 pip install -r requirements.txt
-python src/main.py
+python main.py
    ```
 
 ### **3. Run the Scraper**
