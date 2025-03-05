@@ -1,8 +1,9 @@
 # Main program
 
-import config
-from utils import setup_chrome_driver, extract_job_details
-from logger import logger
+from config import config
+import time
+from utils.logger import logger
+from utils.utils import setup_chrome_driver, extract_job_details, By, pd
 
 def main():
     logger.info("Starting job extraction")
