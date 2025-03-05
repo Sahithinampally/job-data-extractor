@@ -23,7 +23,7 @@ Saves extracted data to an Excel file
 ## Usage
 
 - Step 1: Clone the Repository  
-  Bash
+  Bash  
   git clone https://github.com/Sahithinampally/job-data-extractor.git
 
 - Step 2: Navigate to the Project Directory  
