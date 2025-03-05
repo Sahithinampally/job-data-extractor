@@ -59,7 +59,6 @@ cd job-data-extractor
 
 ```sh
 pip install -r requirements.txt
-python main.py
    ```
 
 ### **3. Run the Scraper**
