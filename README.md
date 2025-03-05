@@ -26,12 +26,12 @@ The scraped data is saved in an **Excel file** for further analysis.
 
 ```sh
 
-EdTech-Job-Scraper/
+job-data-extractor/
 │── config/            # Configuration files  
 │   └── config.py      # Configuration settings  
 │── utils/             # Utility files  
 │   ├── logger.py      # Logging configuration  
-│   └── util.py        # Utility functions  
+│   └── utils.py        # Utility functions  
 │── main.py            # Main script  
 │── requirements.txt   # Project dependencies  
 │── logs/              # Log files  
@@ -65,7 +65,7 @@ python src/main.py
 ### **3. Run the Scraper**
 
 ```sh
-python src/main.py
+python main.py
    ```
 
 ### **Output**
