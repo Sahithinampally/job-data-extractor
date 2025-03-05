@@ -1,49 +1,72 @@
 # Job Data Extractor
 
-A web scraping project that extracts job listings from EdTech.com and saves them to an Excel file.
+A web scraping project that extracts job listings from EdTech companies using Selenium and Python.
 
-## Overview
+Description
+This project automates the extraction of job listings from various EdTech companies. It gathers essential details such as:
 
-This project uses Selenium WebDriver to scrape job listings from EdTech.com. It extracts relevant job details such as:
+Job Title
+Company Name
+Location
+Job Type
+Salary (if available)
+Category
+Job Link
+The scraped data is saved in an Excel file for further analysis.
 
-1. Title
-2. Company
-3. Location
-4. Job type
-5. Salary
-6. Category
-7. Job link
+Features
+✅ Scrapes job listings from EdTech companies
+✅ Extracts key job details
+✅ Saves data to an Excel file
+✅ Organizes files into structured folders
 
-## Features
+Project Structure
+bash
+Copy
+Edit
+EdTech-Job-Scraper/
+│── src/               # Source code  
+│   ├── main.py        # Main script  
+│   ├── utils.py       # Utility functions  
+│   ├── logger.py      # Logging configuration  
+│   ├── config.py      # Configuration settings  
+│── output/            # Scraped data output files  
+│── logs/              # Log files  
+│── requirements.txt   # Project dependencies  
+│── README.md          # Project documentation  
+Requirements
+Ensure you have Python 3.x installed. The following dependencies are required:
 
-Scrapes job listings from EdTech.com
-Extracts job details
-Saves extracted data to an Excel file
+selenium
+pandas
+webdriver-manager
+Installation & Usage
+1. Clone the Repository
+sh
+Copy
+Edit
+git clone https://github.com/your-username/EdTech-Job-Scraper.git
+cd EdTech-Job-Scraper
+2. Install Dependencies
+sh
+Copy
+Edit
+pip install -r requirements.txt
+3. Run the Scraper
+sh
+Copy
+Edit
+python src/main.py
+Output
+The scraped job data will be saved as:
+📁 output/EdTech_Jobs.xlsx
 
-## Usage
+Contributing
+Contributions are welcome! 🚀
+If you'd like to contribute:
 
-- Step 1: Clone the Repository  
-  Bash  
-  git clone https://github.com/Sahithinampally/job-data-extractor.git
-
-- Step 2: Navigate to the Project Directory  
-  Bash  
-  cd job-data-extractor
-
-* Step 3: Run the Script  
-  Bash  
-  python main.py
-
-## File Descriptions
-
-1. config.py: Stores configuration settings, such as the base URL, scroll pause time, and maximum scrolls.
-2. webdriver.py: Sets up the Chrome WebDriver with the desired options.
-3. scraper.py: Contains the logic for scrolling, extracting job listings, and parsing job details.
-4. data.py: Handles data storage and conversion to a Pandas DataFrame.
-5. utils.py: Provides utility functions for tasks like printing job details.
-6. main.py: Serves as the entry point, orchestrating the scraping process.
-7. README.md: Contains information about the project, its purpose, and usage instructions.
-
-## Output
-
-The script will output an Excel file named "EdTech_Jobs.xlsx" containing the extracted job listings.
+Fork the repository
+Make your changes
+Submit a pull request
+License
+This project is licensed under the MIT License.

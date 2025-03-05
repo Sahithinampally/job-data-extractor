@@ -1,46 +1,35 @@
-from webdriver import setup_webdriver
-from scraper import extract_job_listings, parse_job_details
-from data import convert_to_dataframe
-from config import BASE_URL, SCROLL_PAUSE_TIME, MAX_SCROLLS
-import time
+# Main program
+
+import config
+from utils import setup_chrome_driver, extract_job_details
+from logger import logger
 
 def main():
-    driver = setup_webdriver()
-    driver.get(BASE_URL)
+    logger.info("Starting job extraction")
 
-    # Scroll and load all jobs
+    driver = setup_chrome_driver()
+    driver.get(config.BASE_URL)
+
     job_list = []
-    last_height = driver.execute_script("return document.body.scrollHeight")
-
-    for _ in range(MAX_SCROLLS):
+    for _ in range(config.MAX_SCROLLS):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(SCROLL_PAUSE_TIME)
+        time.sleep(config.SCROLL_PAUSE_TIME)
         
-        new_height = driver.execute_script("return document.body.scrollHeight")
-        if new_height == last_height:
-            print("Reached end of job listings.")
-            break
-        last_height = new_height
-
-    jobs = extract_job_listings(driver)
-    print(f"Total Jobs Found: {len(jobs)}")
-
-    for job in jobs:
-        try:
-            job_details = parse_job_details(job)
-            job_list.append(job_details)
-            #print(f"Extracted: {job_details['Title']} | {job_details['Company']} | {job_details['Location']} | {job_details['Job Type']} | {job_details['Salary']} | {job_details['Category']}")
-        except Exception as e:
-            print(f"Error extracting job: {e}")
+        jobs = driver.find_elements(By.XPATH, "//a[contains(@data-id, 'listing')]")
+        for job in jobs:
+            job_details = extract_job_details(job)
+            if job_details:
+                job_list.append(job_details)
+                logger.info(f"Extracted: {job_details['Title']} | {job_details['Company']}")
 
     driver.quit()
 
     if job_list:
-        df = convert_to_dataframe(job_list)
-        df.to_excel("EdTech_Jobs.xlsx", index=False, engine="xlsxwriter")
-        print("✅ Job data saved to EdTech_Jobs.xlsx")
+        df = pd.DataFrame(job_list)
+        df.to_excel(f"output/{config.OUTPUT_FILE_NAME}", index=False, engine="xlsxwriter")
+        logger.info(f"Job data saved to output/{config.OUTPUT_FILE_NAME}")
     else:
-        print("❌ No job data found.")
+        logger.info("No job data found.")
 
 if __name__ == "__main__":
     main()
