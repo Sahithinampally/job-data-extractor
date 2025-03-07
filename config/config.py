@@ -1,5 +1,7 @@
 # Configuration file
 
+import logging
+
 # Base URL for job listings
 BASE_URL = "https://www.edtech.com/jobs"
 
@@ -11,5 +13,5 @@ MAX_SCROLLS = 20  # Prevent infinite loops
 OUTPUT_FILE_NAME = "EdTech_Jobs.xlsx"
 
 # Logging configuration
-LOG_LEVEL = "INFO"
+LOG_LEVEL = logging.ERROR
 LOG_FILE_NAME = "app.log"
