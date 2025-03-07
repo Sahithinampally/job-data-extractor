@@ -7,13 +7,17 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
 def setup_chrome_driver():
-    options = webdriver.ChromeOptions()
-    options.add_argument("--headless")  # Runs in background (no browser window)
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
+    try:
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")  # Runs in background (no browser window)
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
 
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-    return driver
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+        return driver
+    except Exception as e:
+        print(f"Error setting up Chrome driver: {e}")
+        return None
 
 def extract_job_details(job):
     try:
