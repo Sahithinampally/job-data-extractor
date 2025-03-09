@@ -1,0 +1,142 @@
+ERROR:root:Webdriver error occurred while scrolling or extracting jobs: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=133.0.6943.143)
+Stacktrace:
+0   chromedriver                        0x0000000104f802d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000104f78934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000104ad9f90 cxxbridge1$string$len + 93360
+3   chromedriver                        0x0000000104ac2ed8 chromedriver + 192216
+4   chromedriver                        0x0000000104ae6520 cxxbridge1$string$len + 143936
+5   chromedriver                        0x0000000104b4901c cxxbridge1$string$len + 548156
+6   chromedriver                        0x0000000104b61994 cxxbridge1$string$len + 648884
+7   chromedriver                        0x0000000104b15060 cxxbridge1$string$len + 335232
+8   chromedriver                        0x0000000104f48c38 cxxbridge1$str$ptr + 2512864
+9   chromedriver                        0x0000000104f4bf58 cxxbridge1$str$ptr + 2525952
+10  chromedriver                        0x0000000104f2e578 cxxbridge1$str$ptr + 2404640
+11  chromedriver                        0x0000000104f4c818 cxxbridge1$str$ptr + 2528192
+12  chromedriver                        0x0000000104f1ef2c cxxbridge1$str$ptr + 2341588
+13  chromedriver                        0x0000000104f68a60 cxxbridge1$str$ptr + 2643464
+14  chromedriver                        0x0000000104f68be8 cxxbridge1$str$ptr + 2643856
+15  chromedriver                        0x0000000104f785a8 cxxbridge1$str$ptr + 2707792
+16  libsystem_pthread.dylib             0x000000018cfcc2e4 _pthread_start + 136
+17  libsystem_pthread.dylib             0x000000018cfc70fc thread_start + 8
+
+ERROR:root:Webdriver error occurred while scrolling or extracting jobs: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000104f802d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000104f78934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000104ad9e04 cxxbridge1$string$len + 92964
+3   chromedriver                        0x0000000104b143d8 cxxbridge1$string$len + 332024
+4   chromedriver                        0x0000000104b3ca84 cxxbridge1$string$len + 497572
+5   chromedriver                        0x0000000104b3bd84 cxxbridge1$string$len + 494244
+6   chromedriver                        0x0000000104aa9cd0 chromedriver + 89296
+7   chromedriver                        0x0000000104f48c38 cxxbridge1$str$ptr + 2512864
+8   chromedriver                        0x0000000104f4bf58 cxxbridge1$str$ptr + 2525952
+9   chromedriver                        0x0000000104f2e578 cxxbridge1$str$ptr + 2404640
+10  chromedriver                        0x0000000104f4c818 cxxbridge1$str$ptr + 2528192
+11  chromedriver                        0x0000000104f1ef2c cxxbridge1$str$ptr + 2341588
+12  chromedriver                        0x0000000104aa86d0 chromedriver + 83664
+13  dyld                                0x000000018cc4c274 start + 2840
+
+ERROR:root:Webdriver error occurred while scrolling or extracting jobs: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000104f802d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000104f78934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000104ad9e04 cxxbridge1$string$len + 92964
+3   chromedriver                        0x0000000104b143d8 cxxbridge1$string$len + 332024
+4   chromedriver                        0x0000000104b3ca84 cxxbridge1$string$len + 497572
+5   chromedriver                        0x0000000104b3bd84 cxxbridge1$string$len + 494244
+6   chromedriver                        0x0000000104aa9cd0 chromedriver + 89296
+7   chromedriver                        0x0000000104f48c38 cxxbridge1$str$ptr + 2512864
+8   chromedriver                        0x0000000104f4bf58 cxxbridge1$str$ptr + 2525952
+9   chromedriver                        0x0000000104f2e578 cxxbridge1$str$ptr + 2404640
+10  chromedriver                        0x0000000104f4c818 cxxbridge1$str$ptr + 2528192
+11  chromedriver                        0x0000000104f1ef2c cxxbridge1$str$ptr + 2341588
+12  chromedriver                        0x0000000104aa86d0 chromedriver + 83664
+13  dyld                                0x000000018cc4c274 start + 2840
+
+ERROR:root:Webdriver error occurred while scrolling or extracting jobs: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000104f802d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000104f78934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000104ad9e04 cxxbridge1$string$len + 92964
+3   chromedriver                        0x0000000104b143d8 cxxbridge1$string$len + 332024
+4   chromedriver                        0x0000000104b3ca84 cxxbridge1$string$len + 497572
+5   chromedriver                        0x0000000104b3bd84 cxxbridge1$string$len + 494244
+6   chromedriver                        0x0000000104aa9cd0 chromedriver + 89296
+7   chromedriver                        0x0000000104f48c38 cxxbridge1$str$ptr + 2512864
+8   chromedriver                        0x0000000104f4bf58 cxxbridge1$str$ptr + 2525952
+9   chromedriver                        0x0000000104f2e578 cxxbridge1$str$ptr + 2404640
+10  chromedriver                        0x0000000104f4c818 cxxbridge1$str$ptr + 2528192
+11  chromedriver                        0x0000000104f1ef2c cxxbridge1$str$ptr + 2341588
+12  chromedriver                        0x0000000104aa86d0 chromedriver + 83664
+13  dyld                                0x000000018cc4c274 start + 2840
+
+ERROR:root:Webdriver error occurred while scrolling or extracting jobs: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000104f802d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000104f78934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000104ad9e04 cxxbridge1$string$len + 92964
+3   chromedriver                        0x0000000104b143d8 cxxbridge1$string$len + 332024
+4   chromedriver                        0x0000000104b3ca84 cxxbridge1$string$len + 497572
+5   chromedriver                        0x0000000104b3bd84 cxxbridge1$string$len + 494244
+6   chromedriver                        0x0000000104aa9cd0 chromedriver + 89296
+7   chromedriver                        0x0000000104f48c38 cxxbridge1$str$ptr + 2512864
+8   chromedriver                        0x0000000104f4bf58 cxxbridge1$str$ptr + 2525952
+9   chromedriver                        0x0000000104f2e578 cxxbridge1$str$ptr + 2404640
+10  chromedriver                        0x0000000104f4c818 cxxbridge1$str$ptr + 2528192
+11  chromedriver                        0x0000000104f1ef2c cxxbridge1$str$ptr + 2341588
+12  chromedriver                        0x0000000104aa86d0 chromedriver + 83664
+13  dyld                                0x000000018cc4c274 start + 2840
+
+ERROR:root:Webdriver error occurred while scrolling or extracting jobs: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000104f802d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000104f78934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000104ad9e04 cxxbridge1$string$len + 92964
+3   chromedriver                        0x0000000104b143d8 cxxbridge1$string$len + 332024
+4   chromedriver                        0x0000000104b3ca84 cxxbridge1$string$len + 497572
+5   chromedriver                        0x0000000104b3bd84 cxxbridge1$string$len + 494244
+6   chromedriver                        0x0000000104aa9cd0 chromedriver + 89296
+7   chromedriver                        0x0000000104f48c38 cxxbridge1$str$ptr + 2512864
+8   chromedriver                        0x0000000104f4bf58 cxxbridge1$str$ptr + 2525952
+9   chromedriver                        0x0000000104f2e578 cxxbridge1$str$ptr + 2404640
+10  chromedriver                        0x0000000104f4c818 cxxbridge1$str$ptr + 2528192
+11  chromedriver                        0x0000000104f1ef2c cxxbridge1$str$ptr + 2341588
+12  chromedriver                        0x0000000104aa86d0 chromedriver + 83664
+13  dyld                                0x000000018cc4c274 start + 2840
+
+ERROR:root:Webdriver error occurred while scrolling or extracting jobs: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000104f802d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000104f78934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000104ad9e04 cxxbridge1$string$len + 92964
+3   chromedriver                        0x0000000104b143d8 cxxbridge1$string$len + 332024
+4   chromedriver                        0x0000000104b3ca84 cxxbridge1$string$len + 497572
+5   chromedriver                        0x0000000104b3bd84 cxxbridge1$string$len + 494244
+6   chromedriver                        0x0000000104aa9cd0 chromedriver + 89296
+7   chromedriver                        0x0000000104f48c38 cxxbridge1$str$ptr + 2512864
+8   chromedriver                        0x0000000104f4bf58 cxxbridge1$str$ptr + 2525952
+9   chromedriver                        0x0000000104f2e578 cxxbridge1$str$ptr + 2404640
+10  chromedriver                        0x0000000104f4c818 cxxbridge1$str$ptr + 2528192
+11  chromedriver                        0x0000000104f1ef2c cxxbridge1$str$ptr + 2341588
+12  chromedriver                        0x0000000104aa86d0 chromedriver + 83664
+13  dyld                                0x000000018cc4c274 start + 2840
+
+ERROR:root:Webdriver error occurred while scrolling or extracting jobs: Message: invalid session id
+Stacktrace:
+0   chromedriver                        0x0000000104f802d4 cxxbridge1$str$ptr + 2739836
+1   chromedriver                        0x0000000104f78934 cxxbridge1$str$ptr + 2708700
+2   chromedriver                        0x0000000104ad9e04 cxxbridge1$string$len + 92964
+3   chromedriver                        0x0000000104b143d8 cxxbridge1$string$len + 332024
+4   chromedriver                        0x0000000104b3ca84 cxxbridge1$string$len + 497572
+5   chromedriver                        0x0000000104b3bd84 cxxbridge1$string$len + 494244
+6   chromedriver                        0x0000000104aa9cd0 chromedriver + 89296
+7   chromedriver                        0x0000000104f48c38 cxxbridge1$str$ptr + 2512864
+8   chromedriver                        0x0000000104f4bf58 cxxbridge1$str$ptr + 2525952
+9   chromedriver                        0x0000000104f2e578 cxxbridge1$str$ptr + 2404640
+10  chromedriver                        0x0000000104f4c818 cxxbridge1$str$ptr + 2528192
+11  chromedriver                        0x0000000104f1ef2c cxxbridge1$str$ptr + 2341588
+12  chromedriver                        0x0000000104aa86d0 chromedriver + 83664
+13  dyld                                0x000000018cc4c274 start + 2840
+

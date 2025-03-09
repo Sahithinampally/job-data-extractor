@@ -21,5 +21,11 @@ try:
     )
 
     logger = logging.getLogger()
+except OSError as e:
+    print(f"Error creating log directory: {e}")
+except IOError as e:
+    print(f"Error setting up logging: {e}")
+except AttributeError as e:
+    print(f"Error accessing logging attributes: {e}")
 except Exception as e:
-    print(f"Error configuring logging: {e}")
+    print(f"An unexpected error occurred: {e}")

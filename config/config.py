@@ -19,5 +19,5 @@ try:
 
     # Set up logging
     logging.basicConfig(filename=LOG_FILE_NAME, level=LOG_LEVEL)
-except Exception as e:
+except (ImportError, AttributeError, TypeError) as e:
     print(f"Error configuring application: {e}")
